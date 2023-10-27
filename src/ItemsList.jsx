@@ -17,18 +17,18 @@ export default function ItemsList({items = [], onDeleteItem, onMarkAsDone, onMar
         setDraggedItem(null)
         setDraggedIndex(null)
         document.querySelectorAll('.drag-target').forEach(e => e.classList.remove('h-2'))
-        event.target.classList.add('pointer-events-none', 'bg-sky-900')
+        event.target.classList.add('pointer-events-none', 'bg-sky-500')
         setTimeout(() => {
-            event.target.classList.remove('pointer-events-none', 'bg-sky-900')
+            event.target.classList.remove('pointer-events-none', 'bg-sky-500')
         }, 500);
     }
     
     const onDragEnter = (event, targetItem) => {
-        event.target.classList.add('bg-gray-600', 'h-8')
+        event.target.classList.add('bg-sky-500', 'h-8')
     }
     
     const onDragLeave = (event) => {
-        event.target.classList.remove('bg-gray-600', 'h-8')
+        event.target.classList.remove('bg-sky-500', 'h-8')
     }
     
     const onDropIn = (targetItem, position) => {
@@ -72,7 +72,7 @@ export default function ItemsList({items = [], onDeleteItem, onMarkAsDone, onMar
                         ? <div onDragEnter={onDragEnter} onDragLeave={onDragLeave} className="drag-target h-0 transition-all" onDrop={($event) => onDropIn(item, 'avobe')} onDragOver={onDragOver}></div>
                         : ''
                 }
-                <li className="flex justify-between p-2 transition-colors" draggable onDragStart={() => onDragStart(item)} onDragEnd={($event) => onDragEnd($event, item)}>
+                <li className="flex justify-between p-2 transition-colors hover:bg-sky-900 hover:shadow-lg" draggable onDragStart={() => onDragStart(item)} onDragEnd={($event) => onDragEnd($event, item)}>
                     <div className="flex items-center gap-2 min-w-0">
                         <i className="bi bi-grip-horizontal cursor-move text-gray-500"></i>
                         {
