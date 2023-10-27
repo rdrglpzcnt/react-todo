@@ -115,7 +115,7 @@ function App() {
             <br/>
             <br/>
             <ul>
-              <li> Las tareas se guardan localmente en tu dispositivo por lo cual son totalmente privadas. </li>
+              <li> <b>Las tareas se guardan localmente en tu dispositivo</b> por lo cual son totalmente privadas. </li>
             </ul>
           </p>
         </div>
