@@ -133,7 +133,7 @@ function App() {
       </div>
         
       <p className="text-center py-4">
-        <a className="text-xs text-slate-500" href="https://github.com/rdrglpzcnt" target="_blank">
+        <a className="text-xs text-slate-500" href="https://github.com/rdrglpzcnt" target="_blank" rel="noreferrer">
           RDRGLPZCNT
         </a>
       </p>
