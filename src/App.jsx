@@ -104,13 +104,19 @@ function App() {
           <div className="flex items-center py-4">
             <img src={logo} className="w-16" alt="logo"/>
             <div>
-              <h1 className="text-white text-3xl font-bold">React Todo List</h1>
+              <h1 className="text-white text-3xl font-bold">React.js Todo List</h1>
             </div>
           </div>
-          <p className="text-sm text-white px-6">
-            Había usado react muy muy poquito, asi que quise hacer esta Lista de tareas para aprender un poco más.
+          <p className="text-xs text-white px-6">
+            Había usado React.js muy poquito, así que quise hacer esta Lista de tareas para aprender un poquito más.
+            <br/>
             <br/>
             Puedes <b>Agregar tareas, Eliminarlas, Marcarlas como hechas y moverlas de orden.</b>
+            <br/>
+            <br/>
+            <ul>
+              <li> Las tareas se guardan localmente en tu dispositivo por lo cual son totalmente privadas. </li>
+            </ul>
           </p>
         </div>
       </header>
@@ -125,6 +131,12 @@ function App() {
           }
         </div>
       </div>
+        
+      <p className="text-center py-4">
+        <a className="text-xs text-slate-500" href="https://github.com/rdrglpzcnt" target="_blank">
+          RDRGLPZCNT
+        </a>
+      </p>
 
     </div>
   );
